@@ -1,0 +1,236 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1F2833;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.header {
+    margin-top: auto;
+}
+
+/*Divider line separating Header and NavBar*/
+hr.solid {
+    display: block;
+    border: 0;
+    border-top: 1px solid rgba(204, 204, 204, 0.473);
+}
+
+/*Logo*/
+.logo-img {
+    width: 20%;
+    height: 15%;
+    border: 5px solid #555;
+    border-radius: 8px;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Search bar position to the top right...I can't figure out how to have it just above the NavBar*/
+.search-container {
+    float: right;
+}
+
+/*Search bar input bar*/
+.nav input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+  }
+
+/*Changes the cursor when hovering over Search button*/
+.nav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-right: 10px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+/*Sign Up and View Cart Buttons*/
+.nav .sign-cart button {
+    border: none;
+    color: black;
+    background-color: gold;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+/*NavBar Appearance*/
+.nav {
+    list-style-type: none;
+    margin: 10px; 
+    overflow: hidden;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+}
+
+/*NavBar link appearance*/
+a {
+    display: auto;
+    text-align: center;
+    text-decoration: none;
+    padding-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: gold;
+}
+
+/*Change colour of text when user hovers over NavBar links*/
+a:hover {
+    color: goldenrod;
+}
+
+/*Don't really know what this does but I took it from w3school*/
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/*Dropdown button, this just makes Categories look like the rest of the links*/
+.dropdown .dropbtn {
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    color: gold;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0; 
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    border-radius: 5px;
+    position: absolute;
+    background-color: #405268;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color:gold;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a dark blue background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #1c395c;
+    border-radius: 5px;
+}
+
+/* Add a gold background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: goldenrod;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+ /*I did this because I was using Comic Book Shoppe website as reference*/
+#content {
+    background-color: #2e3844;
+    border: none;
+}
+
+
+#feature {
+    text-align: center;
+    padding-bottom: 40px;
+    color: gold;
+    font-family: fantasy;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+#articles {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    width: 80%;
+    padding: 0;
+    background-color: #394657;
+
+}
+
+.product .main {
+    text-align: center;
+}
+
+.product {
+    border: 2px solid #2e3844;
+    padding: 10px;
+}
+
+.art-img {
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 20px;
+    max-width: 40%;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#id, p {
+    color: gold;
+}
+
+h1 {
+    color: gold;
+    text-align: center;
+}
+
+.about-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*Sidebar*/
+.sidebar {
+    height: 100%;
+    width: 200px;
+    float: left;
+    top: 0;
+    left: 0;
+    border: 2px solid #2e3844;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+/*Buttons in Sidebar*/
+.btn {
+    display: block;
+    border: 1px solid;
+}
+
+.box {
+    text-align: center;
+}
