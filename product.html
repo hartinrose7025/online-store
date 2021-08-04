@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Good Ol' Games Online Shop</title>
+    <link rel="stylesheet"  href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e40180749e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+
+    <div id="header">
+      <img class="logo-img" src="images/Logo.png" alt="logo image">
+    </div>
+
+      <!--Line break to separate header from NavBar-->
+      <hr class="solid">
+      
+      <!--Navigation Bar-->
+      <div class="nav">
+        
+        <a href="">Home</a></li>
+
+          <!--Created separate DIV to make drowpdown menu for Categories-->
+          <div class="dropdown">
+            <button class="dropbtn">Categories
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="manga.html">Manga</a>
+              <a href="comics.html">Comic Books</a>
+              <a href="vgames.html">Video Games</a>
+              <a href="bgames.html">Board Games</a>
+            </div>
+          </div>
+          <!--End of dropdown menu-->
+
+          <a href="about.html">About</a></li>
+          <a href="contact.html">Contact</a></li>
+
+          <!--Search Bar-->
+          <div class="search-container">
+            <input type="text" placeholder="Search..">
+            <button type="submit"><i class="fas fa-search" onclick="location.href='search.html'"></i></button>
+        </div>
+
+          <!--Sign Up and View Cart buttons-->
+          <div class="sign-cart">           
+            <button id="btnsup">Sign Up</button>        
+            <button id="btnhome">View Cart</button>                             
+          </div>
+      </div>
