@@ -214,23 +214,63 @@ h1 {
 }
 
 /*Sidebar*/
-.sidebar {
-    height: 100%;
-    width: 200px;
+.sidebar{
+    display: flex;
+    flex-direction: column;
     float: left;
-    top: 0;
-    left: 0;
-    border: 2px solid #2e3844;
-    border-radius: 12px;
+    list-style: none;
+    position: absolute;
+    padding: 20px;
+}
+
+/*Product Content in Search Page*/
+.productBody {
+    background-color: aquamarine;
+    margin: 20px;   
+    margin-left: 200px;
+}
+
+body section.middle {
+	min-height:500px;
+}
+
+body section.middle .sidebar {
+	padding-left:0;
+	float:left;
+}
+
+body section.middle .productBody{
+	float:left;
+	margin-left:0;
+	padding-top: 30px;
+	width: 900px;
+}
+
+.col-4 {
+	flex-basis: 33%;
     padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+	text-align:left;
 }
 
-/*Buttons in Sidebar*/
-.btn {
-    display: block;
-    border: 1px solid;
+.col-4 img {
+	width: 300px;
+	height: 400px;
+	object-fit: contain;
 }
 
-.box {
-    text-align: center;
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px; 
 }

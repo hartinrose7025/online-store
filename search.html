@@ -30,9 +30,13 @@
             </button>
             <div class="dropdown-content">
               <a href="manga.html">Manga</a>
+              <p id="catID" style="visibility: hidden;">1</p>
               <a href="comics.html">Comic Books</a>
+              <p id="catID" style="visibility: hidden;">2</p>
               <a href="vgames.html">Video Games</a>
+              <p id="catID" style="visibility: hidden;">3</p>
               <a href="bgames.html">Board Games</a>
+              <p id="catID" style="visibility: hidden;">4</p>
             </div>
           </div>
           <!--End of dropdown menu-->
@@ -52,3 +56,42 @@
             <button id="btnhome">View Cart</button>                             
           </div>
       </div>
+
+    <!--Sidebar to filter products-->
+    <div class="sidebar">
+        <h2 id="catName"></h2>
+        <br>
+        <select id="categories">
+            <option selected>Filter By Category:</option>
+			<option>View All</option>
+			<option>Manga</option>
+			<option>Comics</option>
+			<option>Videogames</option>
+			<option>Boardgames</option>
+        </select>
+
+        <br>
+
+        <select id="filterRating">
+			<option selected>Filter By Rating: </option>
+			<option>5 Stars</option>
+			<option>4 Stars</option>
+			<option>3 Stars</option>
+			<option>2 Stars</option>
+			<option>1 Star</option>
+		</select>
+
+        <br>
+
+        <select id="sortPrice">
+			<option selected>Sort By Price: </option>
+            <option>Low to High</option>
+			<option>High to Low</option>
+		</select>
+    </div>
+
+    <!--Product Content-->
+    <div class="productBody">
+        <h1>Search Results</h1> 
+        <div class="row" id="productArea"></div>
+    </div>
